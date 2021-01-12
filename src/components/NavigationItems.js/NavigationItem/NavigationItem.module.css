@@ -1,0 +1,12 @@
+.NavigationItem {
+  border-radius: 18px;
+  color: rgb(119, 119, 119);
+  padding: 0.6rem 2rem;
+  border: 1px solid #eee;
+}
+
+.NavigationItem span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
