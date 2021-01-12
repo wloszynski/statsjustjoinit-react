@@ -5,11 +5,14 @@ import Search from "../../components/Search/Search";
 
 import classes from "./Navigation.module.css";
 class Navigation extends Component {
+  state = {
+    items: [{ content: "Technology" }, { content: "Latest" }],
+  };
   render() {
     return (
       <div className={classes.Navigation}>
         <Search />
-        <NavigationItems />
+        <NavigationItems items={this.state.items} />
       </div>
     );
   }

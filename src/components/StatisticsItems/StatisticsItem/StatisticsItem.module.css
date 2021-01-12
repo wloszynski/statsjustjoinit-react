@@ -6,7 +6,7 @@
   height: 6rem;
   margin: 0.5rem 0;
   margin-right: 0.25rem;
-  padding: 0.5rem 1rem;
+  padding: 4rem 1rem;
   background-color: white;
   border-left: solid 4px rgb(3, 155, 229);
   border-radius: 6px;
@@ -14,7 +14,7 @@
 }
 
 .StatisticsItem h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 300;
   text-transform: uppercase;
   color: rgb(55, 71, 79);

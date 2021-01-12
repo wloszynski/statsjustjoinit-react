@@ -3,10 +3,11 @@
   color: rgb(119, 119, 119);
   padding: 0.6rem 2rem;
   border: 1px solid #eee;
+  margin: 0 0.25rem;
 }
 
 .NavigationItem span {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
 }

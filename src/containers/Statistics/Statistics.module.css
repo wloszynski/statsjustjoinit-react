@@ -12,13 +12,15 @@
 }
 
 .Appearances {
+  text-align: center;
   padding: 0.5rem 2rem;
   background-color: rgb(243, 246, 248);
-  width: 10rem;
+  width: 13rem;
   border-radius: 2rem 2rem 0 0;
 }
 
 .Appearances span {
+  font-size: 1.4rem;
   font-weight: 700;
   color: #777;
 }

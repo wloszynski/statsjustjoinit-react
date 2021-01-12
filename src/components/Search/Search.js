@@ -5,7 +5,7 @@ import classes from "./Search.module.css";
 const search = () => {
   return (
     <div className={classes.Search}>
-      <i class="fas fa-search"></i>
+      <i className="fas fa-search"></i>
     </div>
   );
 };
