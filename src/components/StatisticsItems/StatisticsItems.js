@@ -6,7 +6,8 @@ import classes from "./StatisticsItems.module.css";
 
 const statisticsItems = () => {
   return (
-    <div>
+    <div className={classes.StatisticsItems}>
+      <StatisticsItem />
       <StatisticsItem />
     </div>
   );

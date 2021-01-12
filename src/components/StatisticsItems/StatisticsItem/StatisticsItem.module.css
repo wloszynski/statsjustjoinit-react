@@ -1,0 +1,14 @@
+.StatisticsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 6vh;
+  padding: 5px;
+  text-align: center;
+  line-height: 6vh;
+  margin-bottom: 0.5vh;
+  margin-top: 1vh;
+  background-color: white;
+  color: black;
+}

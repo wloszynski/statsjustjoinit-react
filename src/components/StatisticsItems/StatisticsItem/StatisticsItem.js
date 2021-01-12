@@ -2,8 +2,13 @@ import React from "react";
 
 import classes from "./StatisticsItem.module.css";
 
-const statistsItem = () => {
-  return <div>statistsItem</div>;
+const statisticsItem = () => {
+  return (
+    <div className={classes.StatisticsItem}>
+      <span>Python</span>
+      <span>10</span>
+    </div>
+  );
 };
 
-export default statistsItem;
+export default statisticsItem;
