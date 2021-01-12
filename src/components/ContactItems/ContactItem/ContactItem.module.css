@@ -1,0 +1,13 @@
+.ContactItem {
+  color: black;
+}
+
+.ContactItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ContactItem i {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
