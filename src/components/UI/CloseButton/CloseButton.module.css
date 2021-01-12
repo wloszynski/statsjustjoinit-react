@@ -1,0 +1,17 @@
+.CloseBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 4rem;
+  width: 4rem;
+
+  background-color: white;
+  border: 1px solid rgb(153, 161, 171);
+  border-radius: 50%;
+}
+
+.CloseBtn i {
+  color: rgb(153, 161, 171);
+  font-size: 2.5rem;
+}
