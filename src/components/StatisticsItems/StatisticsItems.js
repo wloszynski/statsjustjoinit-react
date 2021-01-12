@@ -15,6 +15,27 @@ const statisticsItems = () => {
       <StatisticsItem />
       <StatisticsItem />
       <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
     </div>
   );
 };
