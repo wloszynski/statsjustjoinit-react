@@ -9,6 +9,12 @@ const statisticsItems = () => {
     <div className={classes.StatisticsItems}>
       <StatisticsItem />
       <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
+      <StatisticsItem />
     </div>
   );
 };

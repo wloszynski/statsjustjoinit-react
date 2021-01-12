@@ -5,8 +5,8 @@ import classes from "./StatisticsItem.module.css";
 const statisticsItem = () => {
   return (
     <div className={classes.StatisticsItem}>
-      <span>Python</span>
-      <span>10</span>
+      <h4>Python</h4>
+      <h4>10</h4>
     </div>
   );
 };
