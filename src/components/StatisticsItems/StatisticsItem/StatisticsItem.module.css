@@ -3,12 +3,18 @@
   justify-content: space-between;
   align-items: center;
 
-  height: 6vh;
-  padding: 5px;
-  text-align: center;
-  line-height: 6vh;
-  margin-bottom: 0.5vh;
-  margin-top: 1vh;
+  height: 6rem;
+  margin: 0.5rem 0;
+  margin-right: 0.25rem;
+  padding: 0.5rem 1rem;
   background-color: white;
-  color: black;
+  border-left: solid 4px rgb(3, 155, 229);
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 2px 2px 0px, rgb(0 0 0 / 4%) 0px 1px 5px 0px;
+}
+
+.StatisticsItem h4 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
