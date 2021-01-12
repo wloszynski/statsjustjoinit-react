@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import NavigationItem from "./NavigationItem/NavigationItem";
 
@@ -12,7 +12,7 @@ const navigationItems = (props) => {
     });
   }
 
-  return <Fragment>{navigationItems}</Fragment>;
+  return <div className={classes.NavigationItems}>{navigationItems}</div>;
 };
 
 export default navigationItems;

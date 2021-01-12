@@ -1,0 +1,21 @@
+.Sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2021;
+  background-color: white;
+}
+
+.Technology {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.Technology span {
+  font-size: 1.8rem;
+}

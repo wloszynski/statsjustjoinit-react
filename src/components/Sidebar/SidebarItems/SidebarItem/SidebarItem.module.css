@@ -1,0 +1,19 @@
+.SidebarItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+
+  padding: 0.8rem 0;
+}
+
+.SidebarItem img {
+  display: inline-block;
+  height: 3.5rem;
+  margin-right: 0.8rem;
+}
+
+.SidebarItem span {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
