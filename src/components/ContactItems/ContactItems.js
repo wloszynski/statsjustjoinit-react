@@ -11,7 +11,6 @@ const contactItems = (props) => {
       return <ContactItem key={index} name={item.name} href={item.href} />;
     });
   }
-  console.log(props.items);
   return <div className={classes.ContactItems}>{contactItems}</div>;
 };
 

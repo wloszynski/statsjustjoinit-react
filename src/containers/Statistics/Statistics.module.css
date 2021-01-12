@@ -1,7 +1,24 @@
 .Statistics {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 90vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 80vh;
+  background-color: rgb(243, 246, 248);
+}
+
+.Options {
+  padding-left: 0.7rem;
+  background-color: white;
+}
+
+.Appearances {
+  padding: 0.5rem 2rem;
+  background-color: rgb(243, 246, 248);
+  width: 10rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.Appearances span {
+  font-weight: 700;
+  color: #777;
 }

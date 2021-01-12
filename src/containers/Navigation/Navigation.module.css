@@ -2,5 +2,5 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: orangered;
+  padding: 2rem;
 }

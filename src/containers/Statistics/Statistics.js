@@ -8,6 +8,11 @@ class Statistics extends Component {
   render() {
     return (
       <div className={classes.Statistics}>
+        <div className={classes.Options}>
+          <div className={classes.Appearances}>
+            <span>appearances</span>
+          </div>
+        </div>
         <StatisticsItems />
         <StatisticsGraph />
       </div>
