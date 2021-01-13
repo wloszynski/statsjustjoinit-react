@@ -2,11 +2,11 @@ import React from "react";
 
 import classes from "./StatisticsItem.module.css";
 
-const statisticsItem = () => {
+const statisticsItem = (props) => {
   return (
     <div className={classes.StatisticsItem}>
-      <h4>Python</h4>
-      <h4>10</h4>
+      <h4>{props.item.skill}</h4>
+      <h4>{props.item.counter}</h4>
     </div>
   );
 };
