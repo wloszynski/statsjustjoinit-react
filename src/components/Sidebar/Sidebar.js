@@ -1,19 +1,13 @@
 import React from "react";
 
 import SidebarItems from "./SidebarItems/SidebarItems";
-import CloseButton from "../UI/CloseButton/CloseButton";
-
-import classes from "./Sidebar.module.css";
+import FullScreen from "../UI/FullScreen/FullScreen";
 
 const sidebar = () => {
   return (
-    <div className={classes.Sidebar}>
-      <div className={classes.Technology}>
-        <span>Technology</span>
-        <CloseButton />
-      </div>
+    <FullScreen headerName="Technology" hide>
       <SidebarItems />
-    </div>
+    </FullScreen>
   );
 };
 

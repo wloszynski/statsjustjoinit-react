@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavigationItem from "./NavigationItem/NavigationItem";
-import NavigationLink from "./NavigationLink/NavigationLink";
+import NavigationLinks from "./NavigationLinks/NavigationLinks";
 
 import classes from "./NavigationItems.module.css";
 
@@ -16,15 +16,7 @@ const navigationItems = (props) => {
   return (
     <div className={classes.NavigationItems}>
       {navigationItems}
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
-      <NavigationLink />
+      <NavigationLinks />
     </div>
   );
 };
