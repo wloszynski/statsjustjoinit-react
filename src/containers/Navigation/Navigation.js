@@ -7,6 +7,7 @@ import classes from "./Navigation.module.css";
 class Navigation extends Component {
   state = {
     items: [{ content: "Technology" }, { content: "Latest" }],
+    showTechnologyNav: false,
   };
   render() {
     return (
