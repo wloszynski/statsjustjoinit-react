@@ -16,7 +16,10 @@ const navigationItems = (props) => {
   return (
     <div className={classes.NavigationItems}>
       {navigationItems}
-      <NavigationLinks />
+      <NavigationLinks
+        categories={props.categories}
+        categories_menu={props.categories_menu}
+      />
     </div>
   );
 };

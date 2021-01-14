@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
+import { connect } from "react-redux";
 
 import StatisticsItems from "../../components/StatisticsItems/StatisticsItems";
 import StatisticsGraph from "../../components/StatisticsGraph/StatisticsGraph";
@@ -7,18 +8,32 @@ import StatisticsGraph from "../../components/StatisticsGraph/StatisticsGraph";
 import classes from "./Statistics.module.css";
 class Statistics extends Component {
   state = {
+    link: "all",
     items: null,
   };
 
-  componentDidMount() {
-    console.log(this.props.location.pathname);
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.location.pathname === this.props.location.pathname)
+      return false;
+
     axios
       .get(
         `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${this.props.location.pathname}.json`
       )
       .then((res) => {
         const items = res.data;
-        console.log(items);
+        this.setState({ items: items });
+      })
+      .catch((err) => console.log(err));
+  }
+
+  componentDidMount() {
+    axios
+      .get(
+        `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${this.props.location.pathname}.json`
+      )
+      .then((res) => {
+        const items = res.data;
         this.setState({ items: items });
       })
       .catch((err) => console.log(err));
@@ -48,4 +63,14 @@ class Statistics extends Component {
   }
 }
 
-export default Statistics;
+const mapStateToProps = (state) => {
+  return {
+    cat: state.category,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Statistics, axios);

@@ -7,9 +7,9 @@
   margin: 0 0.3rem;
   color: rgb(119, 119, 119);
 
-  visibility: hidden;
+  /* visibility: hidden;
   opacity: 0;
-  display: none;
+  display: none; */
 }
 
 .NavigationImage {
@@ -33,4 +33,9 @@
 
 .NavigationImage img {
   height: 100%;
+}
+
+.active span {
+  color: black;
+  font-weight: 700;
 }

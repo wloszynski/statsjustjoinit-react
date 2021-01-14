@@ -1,11 +1,16 @@
 import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./NavigationLink.module.css";
 
-const navigationLink = () => {
+const navigationLink = (props) => {
   return (
     <Fragment>
-      <a href="#" className={classes.NavigationLink}>
+      <NavLink
+        to={"/" + props.url}
+        className={classes.NavigationLink}
+        activeClassName={classes.active}
+      >
         <div className={classes.NavigationImage}>
           <img
             src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png"
@@ -13,8 +18,8 @@ const navigationLink = () => {
           />
         </div>
 
-        <span>JS</span>
-      </a>
+        <span>{props.name}</span>
+      </NavLink>
     </Fragment>
   );
 };
