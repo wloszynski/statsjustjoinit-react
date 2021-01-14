@@ -8,7 +8,9 @@ const statisticsItems = (props) => {
   let items = null;
   if (props.items) {
     items = props.items.map((item) => {
-      return <StatisticsItem key={item.id} item={item} />;
+      return (
+        <StatisticsItem key={item.id} name={item.name} counter={item.counter} />
+      );
     });
   }
 

@@ -5,8 +5,8 @@ import classes from "./StatisticsItem.module.css";
 const statisticsItem = (props) => {
   return (
     <div className={classes.StatisticsItem}>
-      <h4>{props.item.skill}</h4>
-      <h4>{props.item.counter}</h4>
+      <h4>{props.name}</h4>
+      <h4>{props.counter}</h4>
     </div>
   );
 };
