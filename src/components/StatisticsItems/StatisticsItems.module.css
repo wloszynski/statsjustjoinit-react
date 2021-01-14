@@ -6,3 +6,7 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+.StatisticsItems::-webkit-scrollbar {
+  width: 0 !important;
+}

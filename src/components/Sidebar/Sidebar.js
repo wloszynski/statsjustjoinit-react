@@ -1,12 +1,20 @@
 import React from "react";
 
-import SidebarItems from "./SidebarItems/SidebarItems";
+import SidebarItem from "./SidebarItems/SidebarItem/SidebarItem";
 import FullScreen from "../UI/FullScreen/FullScreen";
 
-const sidebar = () => {
+import classes from "./Sidebar.module.css";
+
+const sidebar = (props) => {
+  let items = <h2>ERROR</h2>;
+  if (props.categories) {
+    items = props.categories.map((cat, i) => {
+      return <SidebarItem key={i} name={cat} />;
+    });
+  }
   return (
     <FullScreen headerName="Technology" hide>
-      <SidebarItems />
+      <div className={classes.SidebarItems}>{items}</div>
     </FullScreen>
   );
 };

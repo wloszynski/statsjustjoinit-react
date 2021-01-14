@@ -2,6 +2,7 @@ import React from "react";
 
 import NavigationItem from "./NavigationItem/NavigationItem";
 import NavigationLinks from "./NavigationLinks/NavigationLinks";
+import Sidebar from "../Sidebar/Sidebar";
 
 import classes from "./NavigationItems.module.css";
 
@@ -15,11 +16,12 @@ const navigationItems = (props) => {
 
   return (
     <div className={classes.NavigationItems}>
-      {navigationItems}
+      {/* {navigationItems} */}
       <NavigationLinks
         categories={props.categories}
         categories_menu={props.categories_menu}
       />
+      <Sidebar categories={props.categories} hideSidebar={props.hideSidebar} />
     </div>
   );
 };

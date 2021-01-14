@@ -1,16 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import classes from "./SidebarItem.module.css";
 
-const sidebarItem = () => {
+const sidebarItem = (props) => {
   return (
-    <div className={classes.SidebarItem}>
+    <Link to={"/" + props.name} className={classes.SidebarItem}>
       <img
         src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png"
         alt="java"
       />
-      <span>java</span>
-    </div>
+      <span>{props.name}</span>
+    </Link>
   );
 };
 

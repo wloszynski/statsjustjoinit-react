@@ -58,7 +58,13 @@ class Navigation extends Component {
       "Support",
       "Other",
     ],
+    hideSidebar: true,
   };
+
+  toggleSidebar = () => {
+    this.setState({ hideSidebar: !this.state.hideSidebar });
+  };
+
   render() {
     return (
       <div className={classes.Navigation}>
@@ -67,6 +73,8 @@ class Navigation extends Component {
           categories={this.state.categories}
           items={this.state.items}
           categories_menu={this.state.categories_menu}
+          hideSidebar={this.state.hideSidebar}
+          toggleSidebarClick={this.toggleSidebar}
         />
       </div>
     );

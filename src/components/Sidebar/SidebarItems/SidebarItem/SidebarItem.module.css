@@ -4,6 +4,8 @@
   justify-content: flex-start;
   align-content: center;
 
+  text-decoration: none;
+  color: inherit;
   padding: 0.8rem 0;
 }
 
