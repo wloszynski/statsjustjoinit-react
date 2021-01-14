@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Route, Switch } from "react-router-dom";
 
 import Header from "../../containers/Header/Header";
 import Navigation from "../../containers/Navigation/Navigation";
@@ -14,7 +15,9 @@ class Layout extends Component {
         <SearchSidebar />
         <Header />
         <Navigation />
-        <Statistics />
+        <Switch>
+          <Route path="/" component={Statistics} />
+        </Switch>
       </Fragment>
     );
   }
