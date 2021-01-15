@@ -24,3 +24,8 @@
   font-weight: 700;
   color: #777;
 }
+
+.Items {
+  height: 100%;
+  display: flex;
+}
