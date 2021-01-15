@@ -16,10 +16,10 @@ class Layout extends Component {
         <Header />
         <Navigation />
         <Switch>
-          <Route path="/:category" exact component={Statistics} />
           <Route path="/" exact>
             <Redirect to="/all" />
           </Route>
+          <Route path="/" component={Statistics} />
         </Switch>
       </Fragment>
     );
