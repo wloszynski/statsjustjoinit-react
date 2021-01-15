@@ -45,7 +45,7 @@ class Statistics extends Component {
       items = (
         <Fragment>
           <StatisticsItems items={this.state.items} />
-          <StatisticsGraph />
+          <StatisticsGraph image={this.props.location.pathname} />
         </Fragment>
       );
     }
@@ -57,7 +57,7 @@ class Statistics extends Component {
             <span>appearances</span>
           </div>
         </div>
-        {items}
+        <div className={classes.Items}>{items}</div>
       </div>
     );
   }

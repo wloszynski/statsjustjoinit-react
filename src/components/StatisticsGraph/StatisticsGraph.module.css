@@ -1,3 +1,27 @@
 .StatisticsGraph {
   display: none;
 }
+
+@media only screen and (min-width: 1200px) {
+  .StatisticsGraph {
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 100%;
+    display: block;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(111, 191, 143, 1) 35%,
+      rgba(253, 187, 45, 1) 100%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .StatisticsGraph img {
+    height: 80%;
+  }
+}
