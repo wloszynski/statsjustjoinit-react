@@ -19,7 +19,7 @@ class Layout extends Component {
           <Route path="/" exact>
             <Redirect to="/all" />
           </Route>
-          <Route path="/" component={Statistics} />
+          <Route path="/:category" component={Statistics} />
         </Switch>
       </Fragment>
     );
