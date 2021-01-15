@@ -21,8 +21,10 @@ import go from "./img/go.svg";
 import sap from "./img/sap.svg";
 import support from "./img/support.svg";
 import other from "./img/other.svg";
+import jobs from "./img/job.svg";
 
 const imgs = [
+  ["jobs", jobs],
   ["all", all],
   ["javascript", javascript],
   ["html", html],

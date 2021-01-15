@@ -9,6 +9,7 @@ class Navigation extends Component {
     items: [{ content: "Technology" }],
     showTechnologyNav: false,
     categories: [
+      "jobs",
       "all",
       "javascript",
       "html",
@@ -34,6 +35,7 @@ class Navigation extends Component {
       "other",
     ],
     categories_menu: [
+      "Jobs",
       "All",
       "JS",
       "HTML",
