@@ -6,7 +6,7 @@ import Search from "../../components/Search/Search";
 import classes from "./Navigation.module.css";
 class Navigation extends Component {
   state = {
-    items: [{ content: "Technology" }, { content: "Latest" }],
+    items: [{ content: "Technology" }],
     showTechnologyNav: false,
     categories: [
       "all",

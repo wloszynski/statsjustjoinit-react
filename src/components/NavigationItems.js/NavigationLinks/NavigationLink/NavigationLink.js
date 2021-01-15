@@ -12,10 +12,7 @@ const navigationLink = (props) => {
         activeClassName={classes.active}
       >
         <div className={classes.NavigationImage}>
-          <img
-            src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png"
-            alt={props.name}
-          />
+          <img src={props.source} alt={props.name} />
         </div>
 
         <span>{props.name}</span>

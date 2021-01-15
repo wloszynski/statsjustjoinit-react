@@ -2,6 +2,8 @@ import React from "react";
 
 import NavigationLink from "./NavigationLink/NavigationLink";
 
+import imgs from "../../../imgs";
+
 import classes from "./NavigationLinks.module.css";
 
 const navigationLinks = (props) => {
@@ -13,6 +15,7 @@ const navigationLinks = (props) => {
           key={index}
           url={cat}
           name={props.categories_menu[index]}
+          source={imgs[index]}
         />
       );
     });

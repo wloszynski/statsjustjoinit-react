@@ -13,6 +13,10 @@
   box-shadow: rgb(0 0 0 / 5%) 0px 2px 2px 0px, rgb(0 0 0 / 4%) 0px 1px 5px 0px;
 }
 
+.StatisticsItem:hover {
+  background-color: #eee;
+}
+
 .StatisticsItem h4 {
   font-size: 3.5rem;
   font-weight: 300;
