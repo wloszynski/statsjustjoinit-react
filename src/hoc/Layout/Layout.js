@@ -20,6 +20,9 @@ class Layout extends Component {
           <Route path="/" exact>
             <Redirect to="/all" />
           </Route>
+          <Route path="/*">
+            <Redirect to="/all" />
+          </Route>
         </Switch>
       </Fragment>
     );
