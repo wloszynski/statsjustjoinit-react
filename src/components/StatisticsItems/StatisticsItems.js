@@ -9,7 +9,12 @@ const statisticsItems = (props) => {
   if (props.items) {
     items = props.items.map((item) => {
       return (
-        <StatisticsItem key={item.id} name={item.name} counter={item.counter} />
+        <StatisticsItem
+          key={item.id}
+          name={item.name}
+          counter={item.counter}
+          color={Math.floor(Math.random() * 16777215).toString(16)}
+        />
       );
     });
   }
