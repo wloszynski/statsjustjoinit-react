@@ -8,3 +8,8 @@
   width: 95vw;
   overflow-x: scroll;
 }
+@media only screen and (min-width: 1200px) {
+  .Navigation::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
