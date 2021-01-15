@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "../../containers/Header/Header";
 import Navigation from "../../containers/Navigation/Navigation";
@@ -16,8 +16,10 @@ class Layout extends Component {
         <Header />
         <Navigation />
         <Switch>
-          <Route path="/" component={Statistics} />
-          <Route path="/" exact component={Statistics} />
+          <Route path="/:category" exact component={Statistics} />
+          <Route path="/" exact>
+            <Redirect to="/all" />
+          </Route>
         </Switch>
       </Fragment>
     );

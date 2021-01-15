@@ -15,13 +15,10 @@ class Statistics extends Component {
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.location.pathname === this.props.location.pathname)
       return false;
-    console.log(this.props);
 
     axios
       .get(
-        `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${
-          this.props.location.pathname ? "/all" : this.props.location.pathname
-        }.json`
+        `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${this.props.location.pathname}.json`
       )
       .then((res) => {
         const items = res.data;
@@ -33,9 +30,7 @@ class Statistics extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${
-          this.props.location.pathname ? "/all" : this.props.location.pathname
-        }.json`
+        `https://statsjustjoinit-default-rtdb.firebaseio.com/skills${this.props.location.pathname}.json`
       )
       .then((res) => {
         const items = res.data;
