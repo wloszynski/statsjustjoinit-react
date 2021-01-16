@@ -5,10 +5,7 @@ import classes from "./SidebarItem.module.css";
 const sidebarItem = (props) => {
   return (
     <Link to={"/" + props.name} className={classes.SidebarItem}>
-      <img
-        src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png"
-        alt="java"
-      />
+      <img src={props.source} alt="java" />
       <span>{props.name}</span>
     </Link>
   );
