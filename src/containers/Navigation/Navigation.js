@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import NavigationItems from "../../components/NavigationItems.js/NavigationItems";
-import Search from "../../components/Search/Search";
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 import classes from "./Navigation.module.css";
