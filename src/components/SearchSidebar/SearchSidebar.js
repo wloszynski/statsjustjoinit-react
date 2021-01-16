@@ -1,5 +1,3 @@
-import React from "react";
-
 import FullScreen from "../UI/FullScreen/FullScreen";
 
 const searchSidebar = () => {
