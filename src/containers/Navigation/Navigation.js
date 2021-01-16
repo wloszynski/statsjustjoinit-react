@@ -61,7 +61,7 @@ class Navigation extends Component {
       "Support",
       "Other",
     ],
-    showSidebar: true,
+    showSidebar: false,
   };
 
   toggleSidebar = () => {
@@ -72,6 +72,7 @@ class Navigation extends Component {
     return (
       <div className={classes.Navigation}>
         <NavigationItems
+          toggleSidebar={() => this.toggleSidebar()}
           categories={this.state.categories}
           items={this.state.items}
           categories_menu={this.state.categories_menu}
