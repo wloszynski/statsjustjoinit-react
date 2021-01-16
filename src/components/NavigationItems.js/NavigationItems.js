@@ -8,7 +8,6 @@ import classes from "./NavigationItems.module.css";
 const navigationItems = (props) => {
   let navigationItems = null;
   if (props.items) {
-    // eslint-disable-next-line
     navigationItems = props.items.map((item, index) => {
       return <NavigationItem key={index} content={item.content} />;
     });
@@ -16,6 +15,7 @@ const navigationItems = (props) => {
 
   return (
     <div className={classes.NavigationItems}>
+      <div onClick={props.toggleSidebar}>{navigationItems}</div>
       <NavigationLinks
         categories={props.categories}
         categories_menu={props.categories_menu}

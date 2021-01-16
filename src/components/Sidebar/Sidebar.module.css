@@ -14,6 +14,8 @@
   width: 100vw;
   z-index: 2021;
   background-color: white;
+  transform: translateX(0);
+  transition: all 0.5s;
 }
 .FullScreenHidden {
   position: fixed;
@@ -25,7 +27,8 @@
   background-color: white;
   opacity: 0;
   visibility: hidden;
-  display: none;
+  transform: translateX(-100%);
+  transition: all 0.5s;
 }
 
 .Header {
