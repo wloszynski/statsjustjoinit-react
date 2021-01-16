@@ -7,10 +7,18 @@ import images from "../../imgs";
 import classes from "./Sidebar.module.css";
 
 const sidebar = (props) => {
-  let styles = props.hideSidebar ? classes.Hidden : classes.FullScreen;
+  let styles = classes.FullScreen;
+
+  // hiding Sidebar when state in Navigation.js is false
+  if (!props.showSidebar) {
+    styles = classes.FullScreenHidden;
+  }
+
   let items = <h2>ERROR</h2>;
   if (props.categories) {
     items = props.categories.map((cat, i) => {
+      console.log(images[i][0]);
+
       return <SidebarItem key={i} name={images[i][0]} source={images[i][1]} />;
     });
   }
@@ -19,11 +27,13 @@ const sidebar = (props) => {
     <div className={styles}>
       <div className={classes.Header}>
         <span>Technology</span>
-        <button className={classes.CloseBtn}>
+        <button onClick={props.toggleSidebar} className={classes.CloseBtn}>
           <i className="fas fa-times"></i>
         </button>
       </div>
-      <div className={classes.SidebarItems}>{items}</div>
+      <div onClick={props.toggleSidebar} className={classes.SidebarItems}>
+        {items}
+      </div>
     </div>
   );
 };

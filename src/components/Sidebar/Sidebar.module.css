@@ -6,7 +6,6 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
 .FullScreen {
   position: fixed;
   top: 0;
@@ -15,6 +14,18 @@
   width: 100vw;
   z-index: 2021;
   background-color: white;
+}
+.FullScreenHidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2021;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .Header {

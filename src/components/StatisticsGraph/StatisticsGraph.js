@@ -8,7 +8,6 @@ const statisticsGraph = (props) => {
   let img = null;
   if (props.image) {
     const skill = props.image.slice(1);
-    console.log(skill);
 
     img = images.filter((el) => {
       return el[0] === skill;
