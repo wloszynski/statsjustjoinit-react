@@ -60,7 +60,7 @@ class Navigation extends Component {
       "Support",
       "Other",
     ],
-    hideSidebar: true,
+    hideSidebar: false,
   };
 
   toggleSidebar = () => {
