@@ -6,3 +6,63 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.FullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2021;
+  background-color: white;
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.FullScreenHidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2021;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.Header span {
+  font-size: 1.8rem;
+}
+
+.Hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.CloseBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 4rem;
+  width: 4rem;
+
+  background-color: white;
+  border: 1px solid rgb(153, 161, 171);
+  border-radius: 50%;
+}
+
+.CloseBtn i {
+  color: rgb(153, 161, 171);
+  font-size: 2.5rem;
+}

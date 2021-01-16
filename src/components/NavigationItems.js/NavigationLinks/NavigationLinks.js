@@ -15,7 +15,7 @@ const navigationLinks = (props) => {
           key={index}
           url={cat}
           name={props.categories_menu[index]}
-          source={imgs[index]}
+          source={imgs[index][1]}
         />
       );
     });
