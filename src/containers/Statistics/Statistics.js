@@ -7,10 +7,7 @@ import StatisticsGraph from "../../components/StatisticsGraph/StatisticsGraph";
 
 import classes from "./Statistics.module.css";
 class Statistics extends Component {
-  state = {
-    link: "all",
-    items: null,
-  };
+  state = {};
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.location.pathname === this.props.location.pathname)

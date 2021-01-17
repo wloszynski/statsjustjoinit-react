@@ -7,8 +7,6 @@ import SearchSidebar from "../../containers/SearchSidebar/SearchSidebar";
 import classes from "./Navigation.module.css";
 class Navigation extends Component {
   state = {
-    items: [{ content: "Technology" }],
-    showTechnologyNav: false,
     categories: [
       "jobs",
       "all",
