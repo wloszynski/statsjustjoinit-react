@@ -9,11 +9,11 @@ import classes from "./NavigationItems.module.css";
 const navigationItems = (props) => {
   return (
     <div className={classes.NavigationItems}>
-      <div onClick={props.toggleSidebar}>
-        <NavigationItem content="Technology" />
-      </div>
       <div onClick={props.toggleSearchSidebar}>
         <Search />
+      </div>
+      <div onClick={props.toggleSidebar}>
+        <NavigationItem content="Technology" />
       </div>
 
       <NavigationLinks
