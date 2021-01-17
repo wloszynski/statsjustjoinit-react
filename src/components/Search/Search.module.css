@@ -4,6 +4,7 @@
   background-color: rgb(243, 246, 248);
   margin-right: 0.25rem;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .Search:hover {
