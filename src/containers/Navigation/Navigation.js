@@ -62,12 +62,13 @@ class Navigation extends Component {
       "Other",
     ],
     showSidebar: false,
-    showSearchSidebar: true,
+    showSearchSidebar: false,
   };
 
   toggleSidebar = () => {
     this.setState({ showSidebar: !this.state.showSidebar });
   };
+
   toggleSearchSidebar = () => {
     this.setState({ showSearchSidebar: !this.state.showSearchSidebar });
   };
@@ -82,6 +83,7 @@ class Navigation extends Component {
           categories_menu={this.state.categories_menu}
           showSidebar={this.state.showSidebar}
           toggleSidebarClick={this.toggleSidebar}
+          toggleSearchSidebar={() => this.toggleSearchSidebar()}
         />
         <Sidebar
           toggleSidebar={() => this.toggleSidebar()}
