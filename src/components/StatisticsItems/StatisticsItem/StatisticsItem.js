@@ -1,7 +1,6 @@
 import React from "react";
 
 import classes from "./StatisticsItem.module.css";
-import "./StatisticsItem.css";
 
 const statisticsItem = (props) => {
   const border_color = "#" + props.color;

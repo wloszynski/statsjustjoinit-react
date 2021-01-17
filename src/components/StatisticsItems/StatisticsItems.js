@@ -4,8 +4,6 @@ import StatisticsItem from "./StatisticsItem/StatisticsItem";
 
 import classes from "./StatisticsItems.module.css";
 
-import "./StatisticsItems.css";
-
 const statisticsItems = (props) => {
   let items = null;
   if (props.items) {
