@@ -72,4 +72,14 @@
   font-style: inherit;
   width: 80%;
   padding: 1rem;
+  border-radius: 2rem;
+  border: solid 2px #eee;
+  outline: none;
+  transition: all 0.4s;
+}
+
+.Input:active,
+.Input:focus {
+  border: solid 2px #ddd;
+  transition: all 0.4s;
 }
