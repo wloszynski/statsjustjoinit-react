@@ -30,7 +30,7 @@
   transition: all 1s;
 }
 
-.NavigationImage:hover {
+.NavigationLink:hover .NavigationImage {
   border-radius: 0.4rem;
 
   transition: all 1s;
