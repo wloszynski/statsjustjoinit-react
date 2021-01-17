@@ -6,10 +6,6 @@
   text-decoration: none;
   margin: 0 0.5rem;
   color: rgb(119, 119, 119);
-
-  /* visibility: hidden;
-  opacity: 0;
-  display: none; */
 }
 
 .NavigationImage {
@@ -37,6 +33,7 @@
 }
 
 .active span {
+  transition: all 0.5s;
   color: black;
   font-weight: 700;
 }
