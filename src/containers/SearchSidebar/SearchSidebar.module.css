@@ -70,16 +70,18 @@
 .Input {
   color: inherit;
   font-style: inherit;
-  width: 80%;
+  font-size: 1.4rem;
+  width: 20%;
   padding: 1rem;
   border-radius: 2rem;
   border: solid 2px #eee;
   outline: none;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 .Input:active,
 .Input:focus {
   border: solid 2px #ddd;
-  transition: all 0.4s;
+  transition: all 0.8s;
+  width: 80%;
 }
