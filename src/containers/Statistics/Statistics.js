@@ -59,8 +59,8 @@ class Statistics extends Component {
             <span className={classes.Info}>
               <i className="fas fa-info"></i>
               <div className={classes.Info__desc}>
-                Appearances represent skill name and number of appearances in
-                given category. Data is scraped from justjoin.it website.
+                Appearances represent the skill name and number of appearances
+                in given category. Data is scraped from justjoin.it website.
               </div>
             </span>
           </div>
