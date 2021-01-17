@@ -1,5 +1,5 @@
 import React from "react";
-import { HideUntilLoaded } from "react-animation";
+import { AnimateOnChange } from "react-animation";
 import StatisticsItem from "./StatisticsItem/StatisticsItem";
 
 import classes from "./StatisticsItems.module.css";
@@ -23,7 +23,7 @@ const statisticsItems = (props) => {
 
   return (
     <div className={classes.StatisticsItems}>
-      <HideUntilLoaded>{items}</HideUntilLoaded>
+      <AnimateOnChange>{items}</AnimateOnChange>
     </div>
   );
 };

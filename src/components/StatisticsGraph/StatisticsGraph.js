@@ -1,5 +1,4 @@
 import React from "react";
-import { AnimateOnChange } from "react-animation";
 
 import images from "../../imgs";
 
@@ -17,7 +16,7 @@ const statisticsGraph = (props) => {
 
   return (
     <div className={classes.StatisticsGraph}>
-      <img className={classes.StatisticsGraph__img} src={img[0][1]} alt="" />
+      <img src={img[0][1]} alt="" />
     </div>
   );
 };
