@@ -36,6 +36,11 @@ class SearchSidebar extends Component {
     ],
     regex: "",
   };
+
+  onChangeHandler = (e) => {
+    this.setState({ regex: e.target.value });
+    console.log(e.target.value);
+  };
   render() {
     let styles = classes.FullScreen;
 
@@ -47,18 +52,23 @@ class SearchSidebar extends Component {
     let items = <h2>ERROR</h2>;
     if (this.state.categories) {
       items = this.state.categories.map((cat, i) => {
-        console.log(images[i][0]);
-
-        return (
-          <SidebarItem key={i} name={images[i][0]} source={images[i][1]} />
-        );
+        if (cat.search(this.state.regex) !== -1) {
+          return (
+            <SidebarItem key={i} name={images[i][0]} source={images[i][1]} />
+          );
+        }
+        return null;
       });
     }
 
     return (
       <div className={styles}>
         <div className={classes.Header}>
-          <span>Search</span>
+          <input
+            onChange={this.onChangeHandler}
+            className={classes.Input}
+            placeholder="Search"
+          />
           <button
             onClick={this.props.toggleSearchSidebar}
             className={classes.CloseBtn}
