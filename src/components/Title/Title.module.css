@@ -1,5 +1,24 @@
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Title h2 {
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 3rem;
+  margin-right: 1rem;
+  display: inline-flex;
+}
+
+.Title span {
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .Title span {
+    display: inline-block;
+  }
 }

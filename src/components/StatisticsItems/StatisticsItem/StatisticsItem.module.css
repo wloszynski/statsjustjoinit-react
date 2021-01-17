@@ -11,6 +11,7 @@
   border-left: solid 4px rgb(3, 155, 229);
   border-radius: 6px;
   box-shadow: rgb(0 0 0 / 5%) 0px 2px 2px 0px, rgb(0 0 0 / 4%) 0px 1px 5px 0px;
+  transition: all 0.9s;
 }
 
 .StatisticsItem:hover {
