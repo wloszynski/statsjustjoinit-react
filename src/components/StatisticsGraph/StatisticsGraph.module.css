@@ -21,7 +21,7 @@
     justify-content: center;
   }
 
-  .StatisticsGraph img {
+  .StatisticsGraph__img {
     width: 50%;
   }
 }

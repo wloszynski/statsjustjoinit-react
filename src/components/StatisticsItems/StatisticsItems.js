@@ -1,8 +1,10 @@
 import React from "react";
-
+import { HideUntilLoaded } from "react-animation";
 import StatisticsItem from "./StatisticsItem/StatisticsItem";
 
 import classes from "./StatisticsItems.module.css";
+
+import "./StatisticsItems.css";
 
 const statisticsItems = (props) => {
   let items = null;
@@ -19,7 +21,11 @@ const statisticsItems = (props) => {
     });
   }
 
-  return <div className={classes.StatisticsItems}>{items}</div>;
+  return (
+    <div className={classes.StatisticsItems}>
+      <HideUntilLoaded>{items}</HideUntilLoaded>
+    </div>
+  );
 };
 
 export default statisticsItems;
