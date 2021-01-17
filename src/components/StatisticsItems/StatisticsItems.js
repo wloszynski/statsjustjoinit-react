@@ -1,8 +1,10 @@
 import React from "react";
-
+import { AnimateOnChange } from "react-animation";
 import StatisticsItem from "./StatisticsItem/StatisticsItem";
 
 import classes from "./StatisticsItems.module.css";
+
+import "./StatisticsItems.css";
 
 const statisticsItems = (props) => {
   let items = null;
@@ -19,7 +21,11 @@ const statisticsItems = (props) => {
     });
   }
 
-  return <div className={classes.StatisticsItems}>{items}</div>;
+  return (
+    <div className={classes.StatisticsItems}>
+      <AnimateOnChange>{items}</AnimateOnChange>
+    </div>
+  );
 };
 
 export default statisticsItems;
