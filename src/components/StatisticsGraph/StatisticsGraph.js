@@ -16,7 +16,7 @@ const statisticsGraph = (props) => {
 
   return (
     <div className={classes.StatisticsGraph}>
-      <img src={img[0][1]} alt="" />
+      <img className={classes.StatisticsGraph__img} src={img[0][1]} alt="" />
     </div>
   );
 };

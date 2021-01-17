@@ -4,9 +4,10 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  margin: 0 0.7rem;
+  margin: 0 0.5rem;
   color: rgb(119, 119, 119);
   font-size: 1.1rem;
+  width: 4.5rem;
 }
 
 .NavigationImage {
