@@ -38,8 +38,7 @@ class SearchSidebar extends Component {
   };
 
   onChangeHandler = (e) => {
-    this.setState({ regex: e.target.value });
-    console.log(e.target.value);
+    this.setState({ regex: e.target.value.toUpperCase() });
   };
 
   onClickHandler = (e) => {

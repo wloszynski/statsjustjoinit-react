@@ -1,5 +1,5 @@
 .Search {
-  padding: 0.7rem;
+  padding: 1rem;
   border-radius: 50%;
   background-color: rgb(243, 246, 248);
   margin-right: 0.25rem;
@@ -11,6 +11,6 @@
 }
 
 .Search i {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #777;
 }
