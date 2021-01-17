@@ -55,7 +55,14 @@ class Statistics extends Component {
       <div className={classes.Statistics}>
         <div className={classes.Options}>
           <div className={classes.Appearances}>
-            <span>appearances</span>
+            <span>appearances </span>
+            <span className={classes.Info}>
+              <i className="fas fa-info"></i>
+              <div className={classes.Info__desc}>
+                Appearances represent skill name and number of appearances in
+                given category. Data is scraped from justjoin.it website.
+              </div>
+            </span>
           </div>
         </div>
         <div className={classes.Items}>{items}</div>
