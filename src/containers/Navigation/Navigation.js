@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import NavigationItems from "../../components/NavigationItems.js/NavigationItems";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import SearchSidebar from "../../containers/SearchSidebar/SearchSidebar";
 
 import classes from "./Navigation.module.css";
 class Navigation extends Component {
@@ -61,10 +62,15 @@ class Navigation extends Component {
       "Other",
     ],
     showSidebar: false,
+    showSearchSidebar: false,
   };
 
   toggleSidebar = () => {
     this.setState({ showSidebar: !this.state.showSidebar });
+  };
+
+  toggleSearchSidebar = () => {
+    this.setState({ showSearchSidebar: !this.state.showSearchSidebar });
   };
 
   render() {
@@ -77,11 +83,16 @@ class Navigation extends Component {
           categories_menu={this.state.categories_menu}
           showSidebar={this.state.showSidebar}
           toggleSidebarClick={this.toggleSidebar}
+          toggleSearchSidebar={() => this.toggleSearchSidebar()}
         />
         <Sidebar
           toggleSidebar={() => this.toggleSidebar()}
           categories={this.state.categories}
           showSidebar={this.state.showSidebar}
+        />
+        <SearchSidebar
+          toggleSearchSidebar={() => this.toggleSearchSidebar()}
+          showSearchSidebar={this.state.showSearchSidebar}
         />
       </div>
     );

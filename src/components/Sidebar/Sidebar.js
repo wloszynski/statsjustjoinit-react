@@ -17,8 +17,6 @@ const sidebar = (props) => {
   let items = <h2>ERROR</h2>;
   if (props.categories) {
     items = props.categories.map((cat, i) => {
-      console.log(images[i][0]);
-
       return <SidebarItem key={i} name={images[i][0]} source={images[i][1]} />;
     });
   }
